@@ -195,3 +195,26 @@
 
 // console.log(rotatedArr); // [8, 9, 10, 1, 2, 3, 4, 5, 6, 7]
 
+// function factorial(n) {
+//   if (n <= 1) {
+//     return 1;
+//   }
+//   return n * factorial(n - 1);
+// }
+
+// console.log(factorial(5));
+
+// 4. Check Prime Number
+
+// function isPrime(num) {
+//   if (num <= 1) return false;
+//   for (let i = 2; i < num; i++) {
+//     if (num % i === 0) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+
+// console.log(isPrime(3));
+
