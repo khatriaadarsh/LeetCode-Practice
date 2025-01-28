@@ -218,3 +218,30 @@
 
 // console.log(isPrime(3));
 
+// function rotateArray(nums, n) {
+//   var newArr = [];
+//   for (let i = 0; i < nums.length; i++) {
+//     nums = nums + [i];
+//   }
+// }
+// rotateArray([1, 2, 3, 4, 5, 6, 7, 8], 4);
+
+// var arr = [11, 22, 33, 44, 55];
+
+// arr.pop();
+
+// console.log(arr);
+
+// function mergeSortedArray(arr1, m, arr2, n) {
+//   let newArr = [];
+//   for (let i = 0; i < m; i++) {
+//     newArr.push(arr1[i]);
+//   }
+//   for (let i = 0; i < n; i++) {
+//     newArr.push(arr2[i]);
+//   }
+//   newArr.sort((a, b) => a - b);
+//   return newArr;
+// }
+
+// console.log(mergeSortedArray([2, 1, 4, 3, 5], 3, [11, 22, 33, 44, 55], 2));
