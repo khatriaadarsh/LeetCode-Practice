@@ -247,3 +247,12 @@
 // }
 
 // console.log(mergeSortedArray([2, 1, 4, 3, 5], 3, [11, 22, 33, 44, 55], 2));
+
+// ---------> Remove Elements from Array
+
+// function removeELement(nums, val) {
+//   return nums.filter((num) => num !== val);
+// }
+
+// console.log(removeELement([3, 2, 2, 3], 2)); // [1, 3, 4, 5]
+
