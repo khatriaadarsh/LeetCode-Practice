@@ -232,6 +232,8 @@
 
 // console.log(arr);
 
+// -------------> Merge Sorted Array
+
 // function mergeSortedArray(arr1, m, arr2, n) {
 //   let newArr = [];
 //   for (let i = 0; i < m; i++) {
