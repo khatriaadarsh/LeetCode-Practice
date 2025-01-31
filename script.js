@@ -287,3 +287,39 @@
 // }
 
 // console.log(removeDuplicateII([0, 0, 1, 1, 1, 1, 2, 3, 3]));
+
+// ------------> Majority Element in Array <---------------
+
+// In this method o(n^2) is time complexity
+
+// function majorityElements(nums) {
+//   for (let i = 0; i < nums.length; i++) {
+//     let count = 0;
+//     for (let j = 0; j < nums.length; j++) {
+//       if (nums[j] == nums[i]) {
+//         count++;
+//       }
+//       if (count > nums[i] / 2) {
+//         return nums[i];
+//       }
+//     }
+//   }
+// }
+
+// console.log(majorityElements([3, 2, 3]));
+
+//In this method, the time complexity is o(n) times
+
+// function majorityElement(nums) {
+//   const hash = {};
+//   let res = 0;
+//   let majority = 0;
+//   for (let n of nums) {
+//     hash[n] = 1 + (hash[n] || 0);
+//     if (hash[n] > majority) {
+//       res = n;
+//       majority = hash[n];
+//     }
+//   }
+//   return res;
+// }
