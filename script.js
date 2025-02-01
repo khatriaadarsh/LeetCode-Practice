@@ -188,13 +188,6 @@
 //   console.log(row);
 // }
 
-// 3. **Rotate Array**:
-//    Write a function that rotates an array to the right by a given number of steps.
-
-// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-// console.log(rotatedArr); // [8, 9, 10, 1, 2, 3, 4, 5, 6, 7]
-
 // function factorial(n) {
 //   if (n <= 1) {
 //     return 1;
@@ -323,3 +316,38 @@
 //   }
 //   return res;
 // }
+
+// Optimization:
+// If the majority element is guaranteed to appear more than half the time, you can use Boyer-Moore Voting Algorithm to solve this problem in
+// O(n) O(n) time and O(1) O(1) space. Here’s
+
+// function majorityElement(nums) {
+//   let count = 0;
+//   let candidate = null;
+//   for (let num of nums) {
+//     if (count == 0) {
+//       candidate = num;
+//     }
+//     count += num === candidate ? 1 : -1;
+//   }
+//   return candidate;
+// }
+
+// console.log(majorityElement([3, 2, 3]));
+
+//  Rotate Array
+
+// function rotateArray(nums, k) {
+//   return nums.concat(nums.splice(0, k));
+// }
+
+// console.log(rotateArray([1, 2, 3, 4, 5, 6, 7, 8], 4)); // [5, 6, 7, 8, 1, 2, 3, 4]
+
+// function rotateArray(arr, num) {
+//   num = num % arr.length; // Adjust the number to be within the array's length
+//   arr.reverse(0, arr); // Reverse the array
+//   arr.reverse(arr, num); // Convert the array
+//   arr.reverse(arr, arr.length);
+//   return arr;
+// }
+// console.log(rotateArray([1, 2, 3, 4, 5, 6, 7, 8], 3));
