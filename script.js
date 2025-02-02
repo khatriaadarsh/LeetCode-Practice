@@ -350,4 +350,34 @@
 //   arr.reverse(arr, arr.length);
 //   return arr;
 // }
-// console.log(rotateArray([1, 2, 3, 4, 5, 6, 7, 8], 3));
+// console.log("Array One" + rotateArray([1, 2, 3, 4, 5, 6, 7, 8], 3));
+
+// function rotateArray(nums, k) {
+//   let n = nums.length;
+//   k = k % n;
+//   if (k === 0) return;
+//   let temp = nums.slice(-k);
+//   for (let i = n - k - 1; i >= 0; i--) {
+//     nums[i + k] = nums[i];
+//   }
+//   for (let i = 0; i < k; i++) {
+//     nums[i] = temp[i];
+//   }
+//   return nums;
+// }
+
+// console.log("Array two" + rotateArray([1, 2, 3, 4, 5, 6, 7, 8], 3)); // [5, 6, 7, 8, 1, 2, 3, 4]
+
+//-----------> Best time to buy and sell stock leetcode
+
+// function sellStock(prices) {
+//   let maxProfit = 0;
+//   let minPrice = Infinity;
+//   for (let i = 0; i < prices.length; i++) {
+//     minPrice = Math.min(minPrice, prices[i]);
+//     maxProfit = Math.max(maxProfit, prices[i] - minPrice);
+//   }
+//   return maxProfit;
+// }
+
+// console.log(sellStock([7, 1, 5, 3, 6, 4])); // 5
