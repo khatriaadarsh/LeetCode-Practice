@@ -225,6 +225,66 @@
 
 // console.log(arr);
 
+// ----->  Learning LinkedList
+// A Linked List is a linear data structure where elements (called nodes) are linked using pointers. Each node consists of:
+
+// Data (value stored in the node)
+// Next (a pointer/reference to the next node in the list)
+
+// [10 | next] → [20 | next] → [30 | next] → [40 | null]
+
+// Node Class represents each node in the list
+class Node {
+  constructor(value) {
+    this.value = value;
+    this.next = null;
+  }
+}
+//   LinkedList class to manage the list
+class LinkedList {
+  constructor() {
+    this.head = null; //Initially, the value of the head is empty
+  }
+  //   Add the node at the end
+  append(value) {
+    const newNode = new Node(value);
+    if (!this.head) {
+      this.head = newNode;
+      return;
+    }
+    let currentNode = this.head;
+    while (currentNode.next) {
+      currentNode = currentNode.next;
+    }
+    currentNode.next = newNode;
+  }
+
+  //   Print the linkedlist values
+  printList() {
+    let currentValue = this.head;
+    let listValue = "";
+    while (currentValue) {
+      listValue += currentValue.value + " -> ";
+      currentValue = currentValue.next;
+    }
+    console.log(listValue + "null");
+  }
+}
+
+const myList = new LinkedList();
+
+myList.append(10);
+
+myList.append(20);
+
+myList.append(30);
+
+myList.append(40);
+
+console.log("LinkedList....");
+
+myList.printList(); // prints the linkedlist to the console
+
 // ----------> Two Sum
 
 // function twoSum(nums, target) {
