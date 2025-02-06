@@ -49,6 +49,39 @@
 
 // console.log(countDigits(131)); // 3
 
+// ----> Check String is Palindrome or not
+
+// function reverseStr(str) {
+//   let reversedStr = "";
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     reversedStr += str[i];
+//   }
+//   return str == reversedStr
+//     ? "The given String is Palindrome"
+//     : "Not Palindrome";
+// }
+
+// console.log(reverseStr("civic"));
+
+// Fibonacci Sequence
+
+// function fibinacci(n) {
+//   if (n < 2) {
+//     return n;
+//   }
+//   let curr = 1,
+//     prev = 0,
+//     next;
+//   for (let i = 2; i <= n; i++) {
+//     next = prev + curr;
+//     prev = curr;
+//     curr = next;
+//   }
+//   return next;
+// }
+
+// console.log(fibinacci(5));
+
 // const numbers = [1, 2, 3, 4, 5];
 // let reversedArr = numbers.slice().reverse();
 // console.log(numbers); // [1, 2, 3, 4, 5]
