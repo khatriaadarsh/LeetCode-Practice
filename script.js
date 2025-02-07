@@ -128,6 +128,18 @@
 
 // console.log(fibinacci(10)); // 8
 
+//----------------> Missing Number in Array
+
+// function missingNumber(arr) {
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+//   }
+//   return (arr.length * (arr.length + 1)) / 2 - sum;
+// }
+
+// console.log(missingNumber([0, 1, 3]));
+
 // let electronVote = ["Harry", "Ron", "Hermione", "Harry", "Ron", "Harry"];
 
 // const tallyVotes = (votes) => {
