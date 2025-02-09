@@ -137,8 +137,36 @@
 //   }
 //   return (arr.length * (arr.length + 1)) / 2 - sum;
 // }
-
 // console.log(missingNumber([0, 1, 3]));
+
+// --------------> unshift and shift with time complexity
+
+// let arr = [1, 2, 3, 4, 5, 6];
+
+// arr.unshift(0); // O(n) adding 0 in start shifting all elements in next index
+
+// console.log(arr);
+
+// arr.shift();
+
+// console.log(arr); //O(1)  Removing 0 from start of Array is shifting all elements at starting position
+
+// arr.forEach((val, i) => {
+//   console.log(val, i);   // val: value of array and i: index
+// });
+
+// ===> find Element in Array
+
+// const findElement = (arr, target) => {
+//   for (let val of arr) {
+//     if (val === target) {
+//       return "Found";
+//     }
+//   }
+//   return "Not Found";
+// };
+
+// console.log(findElement([1, 2, 3, 4, 5], 3));
 
 // let electronVote = ["Harry", "Ron", "Hermione", "Harry", "Ron", "Harry"];
 
