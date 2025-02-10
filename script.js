@@ -165,8 +165,77 @@
 //   }
 //   return "Not Found";
 // };
-
 // console.log(findElement([1, 2, 3, 4, 5], 3));
+
+// ====> Find Element by Index in Array
+// const findELementByIndex = (arr, target) => {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] == target) {
+//       return i;
+//     }
+//   }
+//   return -1;
+// };
+
+// console.log(findELementByIndex([1, 2, 3, 4, 5, 6], 4));
+
+// ====> Splice is used to add and remove elements from Array and Slice is used to create sub array and used for string
+// --> Splice change the original and Slice don't change the original Array its just create copy of given Array or String
+// let arr = [1, 2, 3, 4, 5, 6, 7];
+
+// arr.splice(1, 1);
+
+// console.log(arr);
+
+// arr.splice(4, 0, 11, 22, 33, 44, 55);
+
+// console.log(arr);
+
+// let subArray = arr.slice(4, 9);
+
+// console.log(subArray);
+
+// =====> Shallow Copy and Deep Copy in Array
+//In Shallow copy the original Array is also change if change the new Array
+
+// let arr = [11, 22, 33, 44, 55];
+
+// let shallowCopy = arr;
+
+// shallowCopy.splice(1, 3);
+
+// console.log(arr, shallowCopy);  // [ 11, 55 ] [ 11, 55 ]  --> both Array is Changed
+
+// ====> Deep Copy
+// In Deep Copy the original Array is not change if change the new Array
+// let arr = [11, 22, 33, 44, 55];
+// Method 01
+// let deepCopy01 = [...arr];
+// deepCopy01.splice(1, 0, 1, 2, 3);
+// console.log(deepCopy01, arr); //[ 11,  1,  2,  3, 22, 33, 44, 55] [ 11, 22, 33, 44, 55 ]
+// // Method 02
+// let deepCopy02 = Array.from(arr);
+// deepCopy02.splice(1, 3, 12, 13, 14, 15);
+// console.log(deepCopy02); //[ 11, 22, 33, 44, 55 ]  [ 11, 12, 13, 14, 15, 55 ]
+// Method 03
+// let deepCopy03 = arr.concat(); //If we can't pass any other arr in concat it create copy of Array
+// deepCopy03.splice(5, 0, 66, 77);
+// console.log(deepCopy03);
+
+// ====> Concatination of Arrays
+
+// let arr01 = [1, 2, 3, 4, 5];
+// let arr02 = [11, 22, 33, 44, 55];
+// let newArr = arr01.concat(arr02);
+// console.log(newArr); //[1,  2,  3,  4,  5, 11, 22, 33, 44, 55]
+
+// const compareArray = (arr01, arr02) => {
+//   return arr01.length === arr02.length &&
+//     arr01.every((i) => arr01[i] === arr02[i])
+//     ? "Equal"
+//     : "Not Equal";
+// };
+// console.log(compareArray([1, 2, 3, 4, 5], [1, 2, 3, 4, 5]));
 
 // let electronVote = ["Harry", "Ron", "Hermione", "Harry", "Ron", "Harry"];
 
