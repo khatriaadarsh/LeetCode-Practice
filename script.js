@@ -237,8 +237,70 @@
 // };
 // console.log(compareArray([1, 2, 3, 4, 5], [1, 2, 3, 4, 5]));
 
-// let electronVote = ["Harry", "Ron", "Hermione", "Harry", "Ron", "Harry"];
+// Map, Filter and Reduce
+// --> Ma
+// let arr = [1, 2, 3, 4, 5];
+// let arr02 = arr.map((ele) => {
+//   return ele * 2;
+// });
+// console.log(arr02);
 
+// ==> Filter
+
+// let arr03 = [11, 22, 33, 44, 55];
+// let newArr = arr03.filter((val) => {
+//   return val % 2 === 0;
+// });
+// console.log(newArr);
+
+// ==> Reduce -- Sum of Array
+
+// let array = [12, 13, 14, 15, 16];
+// let sumOfArr = array.reduce((val, ele) => {
+//   return val + ele;
+// });
+
+// console.log(sumOfArr);
+
+// ====>Flat
+
+// ==>Flat do the nested array in side a array makes simple single array
+
+// let nestedArray = [1, 2, [3, 4, [4, 5], 6], 7];
+// let flatedArray = nestedArray.flat(2); //2 makes value third array inside a array also flated
+// console.log(flatedArray);
+
+// -----> Find vs Filter
+// let numbers = [2, 4, 6, 8, 10];
+
+// let findNumber = numbers.find((num) => num > 5);
+// console.log(findNumber); //6
+
+// let filterNumber = numbers.filter((num) => num > 5);
+// console.log(filterNumber); //[ 6, 8, 10 ]
+
+// ====================>String Methods <===================
+// 1;charAt
+// var str01 = "Aadarsh";
+// console.log(str01.charAt(1)); // a
+
+// 2;charCodeAt
+// console.log(str01.charCodeAt(2));  //d = 100
+
+// 3;includes
+// console.log(str01.includes("a")); //true  show true if exist otherwise show false
+
+// 4;indexOf
+// console.log(str01.indexOf("d")); // 2  show index of string
+
+// 5;lastIndexOf
+// console.log(str01.lastIndexOf("a")); // 3
+
+// 6;localeCompare
+// let str02 = "Aadarsh";
+// console.log(str01.localeCompare(str02)); //Compare both String if matched show 0 otherwise show -1
+
+// let electronVote = ["Harry", "Ron", "Hermione", "Harry", "Ron", "Harry"];
 // const tallyVotes = (votes) => {
 //     return votes.reduce((acc, name) => ({
 //         ...acc,
