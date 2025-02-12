@@ -300,6 +300,44 @@
 // let str02 = "Aadarsh";
 // console.log(str01.localeCompare(str02)); //Compare both String if matched show 0 otherwise show -1
 
+// =====> Replace ReplaceAll, subString, slice, and search
+
+let str = "Hello World Welcome to JavaScript Hello Program";
+
+// console.log(str.replace("Hello", "Haloo"));
+
+// //replaceAll
+// console.log(str.replaceAll("Hello", "Haloo"));
+
+// // The difference between substring and slice is substring doesn't contain negative number and slice also used in Array
+
+// // subString
+// console.log(str.substring(4, 15)); // o World Wel
+
+// //slice
+// console.log(str.slice(2, 10)); //llo Worl
+
+// //Search
+// console.log(str.search("Hello")); //In search if string found it 0 otherwise show -1
+
+// console.log(str.split("")); //Seperate whole string into character in Array form  [ 'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o','r', 'l', 'd', ' ', 'W', 'e', 'l', 'c','o', 'm', 'e', ' ', 't', 'o', ' ', 'J','a', 'v', 'a', 'S', 'c', 'r', 'i', 'p', 't', ' ', 'H', 'e', 'l', 'l', 'o', ' ','P', 'r', 'o', 'g', 'r', 'a', 'm']
+
+// console.log(str.split(" ")); // Seperate only String into words in Array form  [ 'Hello', 'World', 'Welcome', 'to', 'JavaScript', 'Hello', 'Program' ]
+
+// let subString = str.split(" ");
+
+// console.log(subString.join()); // Hello,World,Welcome,to,JavaScript,Hello,Program
+
+// console.log(subString.join("")); // HelloWorldWelcometoJavaScriptHelloProgram
+
+// console.log(subString.join(" ")); // Hello World Welcome to JavaScript Hello Program
+
+// console.log(str.toLocaleLowerCase());
+
+// console.log(str.toLocaleUpperCase());
+
+
+
 // let electronVote = ["Harry", "Ron", "Hermione", "Harry", "Ron", "Harry"];
 // const tallyVotes = (votes) => {
 //     return votes.reduce((acc, name) => ({
