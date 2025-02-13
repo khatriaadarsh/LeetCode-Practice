@@ -302,7 +302,7 @@
 
 // =====> Replace ReplaceAll, subString, slice, and search
 
-let str = "Hello World Welcome to JavaScript Hello Program";
+// let str = "Hello World Welcome to JavaScript Hello Program";
 
 // console.log(str.replace("Hello", "Haloo"));
 
@@ -336,7 +336,43 @@ let str = "Hello World Welcome to JavaScript Hello Program";
 
 // console.log(str.toLocaleUpperCase());
 
+//=====> Convert number into String -- str.toString()  is used to convert the number into String
 
+// let num = 13243;
+
+// console.log(typeof num.toString()); //string
+
+// Convert Object into String -- JSON.stringify(obj) is used to convert the Object into String
+
+// let obj = {
+//   name: "Aadarsh",
+//   age: 21,
+//   rollno: 102,
+// };
+// console.log(obj, JSON.stringify(obj));
+
+// ------> Find the index of first occurence in a String -- LeetCode Question
+// var isAnagram = function (s, t) {
+//   return s.split("").sort().join() === t.split("").sort().join();
+// };
+// console.log(isAnagram("anagram", "nagaram"));
+
+// ---------> Longest Common Prefix - longestCommonPrefix
+
+// function longestCommonPrefix(strs) {
+//   if (!strs.length) return "";
+//   let prefix = strs[0];
+//   for (let i = 1; i < strs.length; i++) {
+//     while (strs[i].indexOf(prefix) !== 0) {
+//       prefix = prefix.slice(0, -1);
+//       if (!prefix) return "";
+//     }
+//   }
+//   return prefix;
+// }
+// console.log(longestCommonPrefix(["flower", "flow", "flight"]));
+// console.log(longestCommonPrefix(["dog", "racecar", "car"])); // Output: ""
+// console.log(longestCommonPrefix(["apple", "ape", "april"])); // Output: "ap"
 
 // let electronVote = ["Harry", "Ron", "Hermione", "Harry", "Ron", "Harry"];
 // const tallyVotes = (votes) => {
@@ -347,11 +383,6 @@ let str = "Hello World Welcome to JavaScript Hello Program";
 // };
 
 // console.log(tallyVotes(electronVote)); // { Harry: 3, Ron: 2, Hermione: 1 }
-
-// function areAnagrams(str1, str2) {
-//     return str1.split('').sort().join('').trim() === str2.split('').sort().join('').trim();
-// }
-// console.log(areAnagrams('listen', 'sil ent')); // true
 
 // const currentInputValue = {
 //     firstName: '',
