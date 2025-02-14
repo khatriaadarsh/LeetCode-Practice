@@ -374,6 +374,24 @@
 // console.log(longestCommonPrefix(["dog", "racecar", "car"])); // Output: ""
 // console.log(longestCommonPrefix(["apple", "ape", "april"])); // Output: "ap"
 
+function mergeAlternately(word1, word2) {
+  let ans = "",
+    n = word1.length,
+    m = word2.length;
+  let i = 0;
+  while (i < n || i < m) {
+    if (i < n) {
+      ans += word1[i];
+    }
+    if (i < m) {
+      ans += word2[i];
+    }
+    i++;
+  }
+  return ans;
+}
+console.log(mergeAlternately("abcd", "pqr"));
+
 // let electronVote = ["Harry", "Ron", "Hermione", "Harry", "Ron", "Harry"];
 // const tallyVotes = (votes) => {
 //     return votes.reduce((acc, name) => ({
