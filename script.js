@@ -374,23 +374,36 @@
 // console.log(longestCommonPrefix(["dog", "racecar", "car"])); // Output: ""
 // console.log(longestCommonPrefix(["apple", "ape", "april"])); // Output: "ap"
 
-function mergeAlternately(word1, word2) {
-  let ans = "",
-    n = word1.length,
-    m = word2.length;
-  let i = 0;
-  while (i < n || i < m) {
-    if (i < n) {
-      ans += word1[i];
-    }
-    if (i < m) {
-      ans += word2[i];
-    }
-    i++;
-  }
-  return ans;
-}
-console.log(mergeAlternately("abcd", "pqr"));
+// function mergeAlternately(word1, word2) {
+//   let ans = "",
+//     n = word1.length,
+//     m = word2.length;
+//   let i = 0;
+//   while (i < n || i < m) {
+//     if (i < n) {
+//       ans += word1[i];
+//     }
+//     if (i < m) {
+//       ans += word2[i];
+//     }
+//     i++;
+//   }
+//   return ans;
+// }
+// console.log(mergeAlternately("abcd", "pqr"));
+
+// =======> Length Of Last Word in string
+// ====> All tests will pass using this solution
+// function lengthOfLastWord(str) {
+  // str = str.trim();
+  // let spStr = str.split(" ");
+  // spStr.reverse();
+  // return spStr[0].length;
+  //-----------> or using this will show same output
+  // return spStr[spStr.length - 1].split("").length;
+// }
+// console.log(lengthOfLastWord("Hello World"));
+// console.log(lengthOfLastWord("   fly me   to   the moon  "));
 
 // let electronVote = ["Harry", "Ron", "Hermione", "Harry", "Ron", "Harry"];
 // const tallyVotes = (votes) => {
