@@ -395,12 +395,12 @@
 // =======> Length Of Last Word in string
 // ====> All tests will pass using this solution
 // function lengthOfLastWord(str) {
-  // str = str.trim();
-  // let spStr = str.split(" ");
-  // spStr.reverse();
-  // return spStr[0].length;
-  //-----------> or using this will show same output
-  // return spStr[spStr.length - 1].split("").length;
+// str = str.trim();
+// let spStr = str.split(" ");
+// spStr.reverse();
+// return spStr[0].length;
+//-----------> or using this will show same output
+// return spStr[spStr.length - 1].split("").length;
 // }
 // console.log(lengthOfLastWord("Hello World"));
 // console.log(lengthOfLastWord("   fly me   to   the moon  "));
@@ -811,3 +811,28 @@
 // }
 
 // console.log(sellStock([7, 1, 5, 3, 6, 4])); // 5
+
+// ================> Recursion <==================
+// Recursion is a programming technique where a function calls itself to solve a problem.
+// It is often used to break down complex problems into smaller, more manageable sub-problems.
+// This approach can simplify code and lead to elegant and concise solutions for certain types of problems.
+
+// function fun(n) {
+//   if (n == 0) {
+//     return;
+//   }
+//   console.log("Func", n);
+//   fun(n - 1);
+// }
+// fun(10);
+
+//=======> Factorial of a number
+
+// function fact(n) {
+//   if (n <= 2) {
+//     return n;
+//   }
+//   return n * fact(n - 1);
+// }
+
+// console.log(fact(4));
