@@ -130,14 +130,16 @@
 
 //----------------> Missing Number in Array
 
-// function missingNumber(arr) {
-//   let sum = 0;
-//   for (let i = 0; i < arr.length; i++) {
-//     sum += arr[i];
-//   }
-//   return (arr.length * (arr.length + 1)) / 2 - sum;
-// }
-// console.log(missingNumber([0, 1, 3]));
+function missingNumber(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  let n = arr.length + 1;
+  let expectedSum = (n * (n + 1)) / 2;
+  return expectedSum - sum;
+}
+console.log(missingNumber([1, 2, 3, 5]));
 
 // --------------> unshift and shift with time complexity
 
