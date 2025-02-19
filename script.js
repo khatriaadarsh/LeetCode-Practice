@@ -130,16 +130,16 @@
 
 //----------------> Missing Number in Array
 
-function missingNumber(arr) {
-  let sum = 0;
-  for (let i = 0; i < arr.length; i++) {
-    sum += arr[i];
-  }
-  let n = arr.length + 1;
-  let expectedSum = (n * (n + 1)) / 2;
-  return expectedSum - sum;
-}
-console.log(missingNumber([1, 2, 3, 5]));
+// function missingNumber(arr) {
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+//   }
+//   let n = arr.length + 1;
+//   let expectedSum = (n * (n + 1)) / 2;
+//   return expectedSum - sum;
+// }
+// console.log(missingNumber([1, 2, 3, 5]));
 
 // --------------> unshift and shift with time complexity
 
@@ -838,3 +838,34 @@ console.log(missingNumber([1, 2, 3, 5]));
 // }
 
 // console.log(fact(4));
+
+// function sumOfArr(arr, n) {
+//   if (n === 0) {
+//     return 0;
+//   }
+//   return arr[n - 1] + sumOfArr(arr, n - 1);
+// }
+
+// console.log(sumOfArr([1, 2, 3, 4, 5], 5));
+
+// Mulitiplication of array;
+
+// let arr = [1, 2, 3, 4, 5];
+// let multi = 0;
+// let red = arr.reduce((val, pro) => {
+//   return val * pro;
+// });
+// console.log(red);
+
+//====> Fibonacci - Recursion
+
+// function fibinacci(n) {
+//   if (n < 2) {
+//     return n;
+//   }
+//   return fibinacci(n - 1) + fibinacci(n - 2);
+// }
+
+// console.log(fibinacci(8));
+
+
