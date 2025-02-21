@@ -868,4 +868,9 @@
 
 // console.log(fibinacci(8));
 
-
+// function isPowerOfTwo(n) {
+//   var log_n = Math.log(n) / Math.log(2);
+//   var log_n_floor = Math.floor(log_n);
+//   return log_n - log_n_floor == 0;
+// }
+// console.log(isPowerOfTwo(4));
