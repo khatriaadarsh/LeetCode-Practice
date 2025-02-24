@@ -874,3 +874,38 @@
 //   return log_n - log_n_floor == 0;
 // }
 // console.log(isPowerOfTwo(4));
+
+//===========> Object Problems
+
+// let Obj = {
+//   nickName: "DSA",
+//   rollno: 1023,
+//   semester: 6,
+//   mids: function () {
+//     return "Mids exam will heild in mid of  April";
+//   },
+//   final: () => {
+//     return "Final Paper will heild in end of June";
+//   },
+// };
+// console.log(Object.values(Obj));
+
+// console.log(Obj.mids() + " | " + Obj.final());
+
+// Object.keys(Obj).forEach((keys) => {
+//   console.log(keys);
+// });
+
+// ========> Number of Good pairs
+// function numIdenticalPairs(nums) {
+//   let count = 0;
+//   for (let i = 0; i < nums.length; i++) {
+//     for (let j = 0; j < nums.length; j++) {
+//       if (i < j && nums[i] == nums[j]) {
+//         count++;
+//       }
+//     }
+//   }
+//   return count;
+// }
+// console.log(numIdenticalPairs([1, 2, 3, 1, 1, 3]));
