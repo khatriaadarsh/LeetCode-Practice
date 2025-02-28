@@ -909,3 +909,23 @@
 //   return count;
 // }
 // console.log(numIdenticalPairs([1, 2, 3, 1, 1, 3]));
+
+// Swapping of two numbers using three variable and two
+
+// let a = 4,
+//   b = 6,
+//   c;
+// c = a;
+// a = b;
+// b = c;
+
+// console.log(a, b);
+
+// let num1 = 3,
+//   num2 = 5;
+
+// num1 = num1 + num2;
+// num2 = num1 - num2;
+// num1 = num1 - num2;
+
+// console.log(num1, num2);
