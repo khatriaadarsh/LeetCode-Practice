@@ -929,3 +929,23 @@
 // num1 = num1 - num2;
 
 // console.log(num1, num2);
+
+let a = 11,
+  b = 12;
+
+let c = a + b + a++ + b++ + ++a + ++b;
+
+console.log(a, b, c); //13,14,73
+
+console.log(Math.round(10.4)); // 10
+
+console.log(Math.ceil(10.1)); // 11
+
+console.log(Math.floor(10.9));
+
+console.log(Math.cbrt(64)); //4
+
+console.log(Math.trunc(Math.random() * 1000 + 1000));
+
+let radius = 12;
+console.log((2 * Math.PI * radius).toFixed(2));
