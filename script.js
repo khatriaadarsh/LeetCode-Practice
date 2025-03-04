@@ -930,22 +930,71 @@
 
 // console.log(num1, num2);
 
-let a = 11,
-  b = 12;
+// let a = 11,
+//   b = 12;
 
-let c = a + b + a++ + b++ + ++a + ++b;
+// let c = a + b + a++ + b++ + ++a + ++b;
 
-console.log(a, b, c); //13,14,73
+// console.log(a, b, c); //13,14,73
 
-console.log(Math.round(10.4)); // 10
+// console.log(Math.round(10.4)); // 10
 
-console.log(Math.ceil(10.1)); // 11
+// console.log(Math.ceil(10.1)); // 11
 
-console.log(Math.floor(10.9));
+// console.log(Math.floor(10.9));
 
-console.log(Math.cbrt(64)); //4
+// console.log(Math.cbrt(64)); //4
 
-console.log(Math.trunc(Math.random() * 1000 + 1000));
+// console.log(Math.trunc(Math.random() * 1000 + 1000));
 
-let radius = 12;
-console.log((2 * Math.PI * radius).toFixed(2));
+// let radius = 12;
+// console.log((2 * Math.PI * radius).toFixed(2));
+
+// let units = Number(prompt("Enter electricity unit: "));
+
+// let amount = 0;
+
+// if (units > 400) {
+//   amount = (units - 400) * 13;
+//   units = 400;
+// }
+// if (units > 200 && units <= 400) {
+//   amount += (units - 200) * 8;
+//   units = 200;
+// }
+// if (units > 100 && units <= 200) {
+//   amount += (units - 100) * 6;
+//   units = 100;
+// }
+// amount += units * 4;
+
+// console.log("====================================");
+// console.log(amount);
+// console.log("====================================");
+
+let userInput = 4883;
+
+if (userInput >= 500) {
+  console.log("500 notes: " + Math.floor(userInput / 500));
+  userInput = userInput % 500;
+}
+if (userInput >= 200) {
+  console.log("200 notes: " + Math.floor(userInput / 200));
+  userInput = userInput % 200;
+}
+if (userInput >= 100) {
+  console.log("100 notes: " + Math.floor(userInput / 100));
+  userInput = userInput % 100;
+}
+if (userInput >= 50) {
+  console.log("50 notes: " + Math.floor(userInput / 50));
+  userInput = userInput % 50;
+}
+if (userInput >= 20) {
+  console.log("20 notes: " + Math.floor(userInput / 20));
+  userInput = userInput % 20;
+}
+if (userInput >= 10) {
+  console.log("10 notes: " + Math.floor(userInput / 10));
+  userInput = userInput % 10;
+}
