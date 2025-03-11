@@ -554,28 +554,6 @@
 
 // console.log(factorial(5));
 
-// 4. Check Prime Number
-
-// function isPrime(num) {
-//   if (num <= 1) return false;
-//   for (let i = 2; i < num; i++) {
-//     if (num % i === 0) {
-//       return false;
-//     }
-//   }
-//   return true;
-// }
-
-// console.log(isPrime(3));
-
-// function rotateArray(nums, n) {
-//   var newArr = [];
-//   for (let i = 0; i < nums.length; i++) {
-//     nums = nums + [i];
-//   }
-// }
-// rotateArray([1, 2, 3, 4, 5, 6, 7, 8], 4);
-
 // var arr = [11, 22, 33, 44, 55];
 
 // arr.pop();
@@ -972,29 +950,91 @@
 // console.log(amount);
 // console.log("====================================");
 
-let userInput = 4883;
+// let userInput = 4883;
 
-if (userInput >= 500) {
-  console.log("500 notes: " + Math.floor(userInput / 500));
-  userInput = userInput % 500;
-}
-if (userInput >= 200) {
-  console.log("200 notes: " + Math.floor(userInput / 200));
-  userInput = userInput % 200;
-}
-if (userInput >= 100) {
-  console.log("100 notes: " + Math.floor(userInput / 100));
-  userInput = userInput % 100;
-}
-if (userInput >= 50) {
-  console.log("50 notes: " + Math.floor(userInput / 50));
-  userInput = userInput % 50;
-}
-if (userInput >= 20) {
-  console.log("20 notes: " + Math.floor(userInput / 20));
-  userInput = userInput % 20;
-}
-if (userInput >= 10) {
-  console.log("10 notes: " + Math.floor(userInput / 10));
-  userInput = userInput % 10;
-}
+// if (userInput >= 500) {
+//   console.log("500 notes: " + Math.floor(userInput / 500));
+//   userInput = userInput % 500;
+// }
+// if (userInput >= 200) {
+//   console.log("200 notes: " + Math.floor(userInput / 200));
+//   userInput = userInput % 200;
+// }
+// if (userInput >= 100) {
+//   console.log("100 notes: " + Math.floor(userInput / 100));
+//   userInput = userInput % 100;
+// }
+// if (userInput >= 50) {
+//   console.log("50 notes: " + Math.floor(userInput / 50));
+//   userInput = userInput % 50;
+// }
+// if (userInput >= 20) {
+//   console.log("20 notes: " + Math.floor(userInput / 20));
+//   userInput = userInput % 20;
+// }
+// if (userInput >= 10) {
+//   console.log("10 notes: " + Math.floor(userInput / 10));
+//   userInput = userInput % 10;
+// }
+
+// let n = 36;
+// let fact = 1;
+
+// if (isNaN(n)) {
+//   console.log("Invalid number");
+// } else {
+//   if (n > 0) {
+//     for (let i = 1; i <= Math.floor(n / 2); i++) {
+//       if (n % i === 0) {
+//         console.log(i);
+//       }
+//     }
+//     console.log(n);
+//   } else {
+//     console.log("Number should be positive more then 0");
+//   }
+// }
+
+// function repeatStr(n, s) {
+//   return s.repeat(n);
+// }
+
+// console.log(repeatStr(4, "Hello"));
+
+// let num = 26;
+// let isPrime = true;
+// for (let i = 0; i <= num; i++) {
+//   if (num % 2 === 0) {
+//     isPrime = false;
+//     break;
+//   }
+// }
+// console.log(isPrime);
+
+// let num = 27;
+
+// if (num % 2 !== 0) {
+//   console.log("Number is prime");
+// }
+
+// function isPrimeNum(num) {
+//   if (num <= 1) return false;
+//   if (num === 2) return true;
+//   if (num % 2 === 0) return false;
+//   for (let i = 3; i < Math.floor(Math.sqrt(num)); i += 2) {
+//     if (num % i === 0) return false;
+//   }
+//   return true;
+// }
+// console.log(isPrimeNum(2));
+
+// function sumOfdig(num) {
+//   let sum = 0;
+//   while (num > 0) {
+//     sum += num % 10;
+//     num = Math.floor(num / 10);
+//   }
+//   return sum;
+// }
+
+// console.log(sumOfdig(1323));
