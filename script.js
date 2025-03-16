@@ -1060,25 +1060,84 @@
 //   ])
 // );
 
-const maxNumber = (arr) => {
-  let max = arr[0];
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > max) {
-      max = arr[i];
-    }
-  }
-  return max;
-};
-console.log(maxNumber([1, 2, 5, 4, 3]));
+// const maxNumber = (arr) => {
+//   let max = arr[0];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > max) {
+//       max = arr[i];
+//     }
+//   }
+//   return max;
+// };
+// console.log(maxNumber([1, 2, 5, 4, 3]));
 
-const minNumber = (arr) => {
-  let min = arr[0];
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] < min) {
-      min = arr[i];
-    }
-  }
-  return min;
-};
+// const minNumber = (arr) => {
+//   let min = arr[0];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] < min) {
+//       min = arr[i];
+//     }
+//   }
+//   return min;
+// };
 
-console.log(minNumber([12, 11, 33, 22, 12]));
+// console.log(minNumber([12, 11, 33, 22, 12]));
+
+// reverse a digit e.g 1234 -> 4321
+
+// function reverseDigit(num) {
+//   let rev = 0;
+//   while (num > 0) {
+//     let rem = num % 10;
+//     rev = rev * 10 + rem;
+//     console.log(rev);
+//     num = Math.floor(num / 10);
+//   }
+//   return rev;
+// }
+// console.log(reverseDigit(124)); //4321
+
+// ==========> Check the number is Strong or Not
+
+// function strongNumber(num) {
+//   let sum = 0;
+//   let copy = num;
+//   while (num > 0) {
+//     let rem = num % 10;
+//     let fact = 1;
+//     for (let i = 1; i <= rem; i++) {
+//       fact = fact * i;
+//     }
+//     sum = sum + fact;
+//     num = Math.floor(num / 10);
+//   }
+//   if (copy === sum) {
+//     return "Strong Number";
+//   } else {
+//     return "Not Strong Number";
+//   }
+// }
+
+// console.log(strongNumber(145));
+
+// console.log(strongNumber(40586));
+
+// ==========> Gusses Number
+
+// let randomNum = Math.floor(Math.random() * 100) + 1;
+// let guess = -1;
+
+// while (guess !== randomNum) {
+//   guess = +prompt("Guess the number");
+//   if (isNaN(guess) || guess < 1 || guess > 100) {
+//     console.log("Please guess number b/w 1 - 100");
+//     continue;
+//   }
+//   if (guess < randomNum) {
+//     console.log("Too low number! try again");
+//   } else if (guess > randomNum) {
+//     console.log("Too high number! try again");
+//   } else {
+//     console.log("Congratulations! You Win 🎉", guess);
+//   }
+// }
