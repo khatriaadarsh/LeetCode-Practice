@@ -1141,3 +1141,91 @@
 //     console.log("Congratulations! You Win 🎉", guess);
 //   }
 // }
+
+// let arrLength = +prompt("Enter Array length");
+// let newArr = new Array(arrLength);
+// let sum = 0;
+// for (let i = 0; i < newArr.length; i++) {
+//   newArr[i] = Number(prompt(`Enter ${i} Elements`));
+//   sum += newArr[i];
+// }
+// console.log(sum);
+
+// =============> Reverse Array Using Swapping
+
+// let arr = [10, 20, 30, 40, 50];
+// let i = 0,
+//   j = arr.length - 1;
+// while (i !== j) {
+//   let temp = arr[i];
+//   arr[i] = arr[j];
+//   arr[j] = temp;
+//   i++;
+//   j--;
+// }
+// console.log(arr);
+
+// let arr = [3, 2, -1, 4, -5, 6, -7];
+// let i = 0,
+//   j = 0;
+// let max = arr[0];
+// while (i < arr.length) {
+//   if (arr[i] > max) {
+//     max = arr[i];
+//   }
+//   if (arr[i] < 0) {
+//     let temp = arr[i];
+//     arr[i] = arr[j];
+//     arr[j] = temp;
+//     j++;
+//   }
+//   i++;
+// }
+// console.log(arr);
+
+// let str = "civic";
+// // console.log(str.charAt(1)); // e
+// let rev = "";
+// let i = 0,
+//   j = str.length - 1;
+// let isPalindrome = true;
+// while (i < j) {
+//   if (str.charAt(i) !== str.charAt(j)) {
+//     isPalindrome = false;
+//     break;
+//   }
+//   i++;
+//   j--;
+// }
+
+// if (isPalindrome) {
+//   console.log("The String is Palindrome");
+// } else {
+//   console.log("The String is Not Palindrome");
+// }
+
+//  =============> Toggle Each Character - Convert String into Uppercase and Lowercase
+
+// let str = "ciVic";
+// let toggleCase = "";
+// for (let i = 0; i < str.length; i++) {
+//   let ch = str.charCodeAt(i);
+//   if (ch >= 65 && ch <= 90) {
+//     toggleCase += String.fromCharCode(ch + 32); // Convert to lowercase
+//   } else if (ch >= 97 && ch <= 122) {
+//     toggleCase += String.fromCharCode(ch - 32); // Convert to uppercase
+//   }
+// }
+// console.log(toggleCase); // Output: "CIvIC"
+
+// ===========> Count Frequency of each character in a string
+
+// let str = "Hello World!";
+
+// let frequency = {};
+// for (let char of str) {
+//   if (char !== " ") {
+//     frequency[char] = (frequency[char] || 0) + 1; // Increment frequency count for each character
+//   }
+// }
+// console.log(frequency); // Output: { H: 1, e: 1, l: 3, o: 2, W: 1, r: 1, d: 1, !: 1 }
