@@ -1229,3 +1229,73 @@
 //   }
 // }
 // console.log(frequency); // Output: { H: 1, e: 1, l: 3, o: 2, W: 1, r: 1, d: 1, !: 1 }
+
+// ===========> Rotate Array - Left and Right Rotation I
+
+// let arr = [1, 2, 3, 4, 5];
+// let copy = arr[0];
+// for (let i = 0; i < arr.length - 1; i++) {
+//   arr[i] = arr[i + 1];
+// }
+// arr[arr.length - 1] = copy;
+// console.log(arr);        // Output: [2, 3, 4, 5, 1]
+
+// ===========> Rotate Array - Right to left Rotation I
+
+// let arr = [1, 2, 3, 4, 5];
+// let copy = arr[arr.length - 1];
+// for (let i = arr.length - 1; i > 0; i--) {
+//   arr[i] = arr[i - 1];
+// }
+// arr[0] = copy;
+// console.log(arr); // Output: [5, 1, 2, 3, 4]
+
+// ===========> Rotate Array - Left and Right Rotation II
+
+let arr = [1, 2, 3, 4, 5];
+
+let k = +prompt("Enter the number of rotations: ");
+
+let leftOrRight = prompt(
+  "Enter 'L' for left rotation or 'R' for right rotation: "
+).toUpperCase();
+
+let n = arr.length;
+
+// if (leftOrRight === "L") {
+//   k = k % n; // Adjust k to be within the bounds of the array length
+//   let temp = arr.slice(0, k); // Get the first k elements
+//   arr = arr.slice(k).concat(temp); // Concatenate the remaining elements with the first k elements
+//   console.log(arr); // Output: [3, 4, 5, 1, 2]
+// } else if (leftOrRight === "R") {
+//   k = k % n; // Adjust k to be within the bounds of the array length
+//   let temp = arr.slice(n - k); // Get the last k elements
+//   arr = temp.concat(arr.slice(0, n - k)); // Concatenate the last k elements with the remaining elements
+//   console.log(arr); // Output: [4, 5, 1, 2, 3]
+// } else {
+//   console.log("Invalid input. Please enter 'L' or 'R'.");
+// }
+
+if (leftOrRight == "L") {
+  k = k % n; // Adjust k to be within the bounds of the array length
+  for (let i = 0; i < k; i++) {
+    let copy = arr[0];
+    for (let j = 0; j < arr.length - 1; j++) {
+      arr[j] = arr[j + 1];
+    }
+    arr[arr.length - 1] = copy;
+  }
+  console.log(arr); // Output: [3, 4, 5, 1, 2]
+} else if (leftOrRight == "R") {
+  k = k % n; // Adjust k to be within the bounds of the array length
+  for (let i = 0; i < k; i++) {
+    let copy = arr[arr.length - 1];
+    for (let j = arr.length - 1; j > 0; j--) {
+      arr[j] = arr[j - 1];
+    }
+    arr[0] = copy;
+  }
+  console.log(arr); // Output: [4, 5, 1, 2, 3]
+} else {
+  console.log("Invalid input. Please enter 'L' or 'R'.");
+}
