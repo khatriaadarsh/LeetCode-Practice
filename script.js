@@ -1252,15 +1252,15 @@
 
 // ===========> Rotate Array - Left and Right Rotation II
 
-let arr = [1, 2, 3, 4, 5];
+// let arr = [1, 2, 3, 4, 5];
 
-let k = +prompt("Enter the number of rotations: ");
+// let k = +prompt("Enter the number of rotations: ");
 
-let leftOrRight = prompt(
-  "Enter 'L' for left rotation or 'R' for right rotation: "
-).toUpperCase();
+// let leftOrRight = prompt(
+//   "Enter 'L' for left rotation or 'R' for right rotation: "
+// ).toUpperCase();
 
-let n = arr.length;
+// let n = arr.length;
 
 // if (leftOrRight === "L") {
 //   k = k % n; // Adjust k to be within the bounds of the array length
@@ -1276,26 +1276,64 @@ let n = arr.length;
 //   console.log("Invalid input. Please enter 'L' or 'R'.");
 // }
 
-if (leftOrRight == "L") {
-  k = k % n; // Adjust k to be within the bounds of the array length
-  for (let i = 0; i < k; i++) {
-    let copy = arr[0];
-    for (let j = 0; j < arr.length - 1; j++) {
-      arr[j] = arr[j + 1];
-    }
-    arr[arr.length - 1] = copy;
+// if (leftOrRight == "L") {
+//   k = k % n; // Adjust k to be within the bounds of the array length
+//   for (let i = 0; i < k; i++) {
+//     let copy = arr[0];
+//     for (let j = 0; j < arr.length - 1; j++) {
+//       arr[j] = arr[j + 1];
+//     }
+//     arr[arr.length - 1] = copy;
+//   }
+//   console.log(arr); // Output: [3, 4, 5, 1, 2]
+// } else if (leftOrRight == "R") {
+//   k = k % n; // Adjust k to be within the bounds of the array length
+//   for (let i = 0; i < k; i++) {
+//     let copy = arr[arr.length - 1];
+//     for (let j = arr.length - 1; j > 0; j--) {
+//       arr[j] = arr[j - 1];
+//     }
+//     arr[0] = copy;
+//   }
+//   console.log(arr); // Output: [4, 5, 1, 2, 3]
+// } else {
+//   console.log("Invalid input. Please enter 'L' or 'R'.");
+// }
+
+// let arr = [1, 2, 3, 4, 5];
+
+// let newArr = [];
+
+// let k = 2,
+//   n = arr.length;
+
+// k = k % n; // Adjust k to be within the bounds of the array length
+
+// for (let i = 0; i < n; i++) {
+//   newArr[i] = arr[(i + k) % n]; // Calculate the new index after rotation
+// }
+// console.log(newArr); // Output: [3, 4, 5, 1, 2]
+
+// // Rotate Array - Right and left Rotation III
+// for (let i = 0; i < n; i++) {
+//   newArr[(i + k) % n] = arr[i]; // Calculate the new index after rotation
+// }
+// console.log(newArr); // Output: [3, 4, 5, 1, 2]
+
+let arr = [1, 2, 3, 4, 5];
+let k = 2;
+let n = arr.length;
+k = k % n; // Adjust k to be within the bounds of the array length
+reverse(0, k - 1); // Reverse the entire array
+reverse(k, n - 1); // Reverse the last k elements
+reverse(0, n - 1); // Reverse the first n-k elements
+function reverse(i, j) {
+  while (i < j) {
+    let temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+    i++;
+    j--;
   }
-  console.log(arr); // Output: [3, 4, 5, 1, 2]
-} else if (leftOrRight == "R") {
-  k = k % n; // Adjust k to be within the bounds of the array length
-  for (let i = 0; i < k; i++) {
-    let copy = arr[arr.length - 1];
-    for (let j = arr.length - 1; j > 0; j--) {
-      arr[j] = arr[j - 1];
-    }
-    arr[0] = copy;
-  }
-  console.log(arr); // Output: [4, 5, 1, 2, 3]
-} else {
-  console.log("Invalid input. Please enter 'L' or 'R'.");
 }
+console.log(arr);
